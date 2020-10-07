@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta charset="UTF-8">
+
+		<title>MOConfirmation</title>
+
+		<script id="sap-ui-bootstrap"
+			src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+			data-sap-ui-libs="sap.m"
+			data-sap-ui-theme="sap_bluecrystal"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-resourceroots='{"MOConfirmation": "./"}'>
+		</script>
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/library.css">
+		<script>
+			sap.ui.getCore().attachInit(function() {
+				new sap.m.App ({
+					pages: [
+						new sap.m.Page({
+							title: "MO Confiramtion Plan vs Actual Report", 
+							enableScrolling : false,
+							content: [ new sap.ui.core.ComponentContainer({
+								height : "100%", name : "MOConfirmation"
+							})]
+						})
+					]
+				}).placeAt("content");
+			});
+		</script>
+	</head>
+
+	<body class="sapUiBody" id="content">
+	</body>
+
+</html>

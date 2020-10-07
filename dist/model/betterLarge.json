@@ -1,0 +1,182 @@
+{
+  "milk": [{
+        "Material": "M001",
+        "Plan": 100,
+        "Actual": 400,
+        "Actual1": 403200.08,
+        "Actual2": 184800.33,
+        "Target": 900000.00,
+        "Budget": 300000.00
+    },
+    {
+        "Material": "M002",
+        "Plan": 100,
+        "Actual": 60,
+        "Actual1": 559300.18,
+        "Actual2": 80000.62,
+        "Target": 900000.00,
+        "Budget": 314000.00
+    },
+    {
+        "Material": "M003",
+        "Plan": 100,
+        "Actual": 52,
+        "Actual1": 447200.18,
+        "Actual2": 80000.62,
+        "Target": 900000.00,
+        "Budget": 328000.00
+    },
+    {
+        "Material": "M004",
+        "Plan": 100,
+        "Actual": 50,
+        "Actual1": 407200.74,
+        "Actual2": 97200.29,
+        "Target": 900000.00,
+        "Budget": 342000.00
+    },
+    {
+        "Material": "M005",
+        "Plan": 100,
+        "Actual": 45,
+        "Actual1": 372800.15,
+        "Actual2": 85000.43,
+        "Target": 900000.00,
+        "Budget": 356000.00
+    },
+    {
+        "Material": "M006",
+        "Plan": 100,
+        "Actual": 48,
+        "Actual1": 440000.91,
+        "Actual2": 43200.28,
+        "Target": 900000.00,
+        "Budget": 370000.00
+    },
+    {
+        "Material": "M007",
+        "Plan": 100,
+        "Actual": 27,
+        "Actual1": 198800.73,
+        "Actual2": 71800.40,
+        "Target": 900000.00,
+        "Budget": 384000.00
+    },
+    {
+        "Material": "M008",
+        "Plan": 100,
+        "Actual": 19,
+        "Actual1": 99200.54,
+        "Actual2": 90800.57,
+        "Target": 1000000.00,
+        "Budget": 398000.00
+    },
+    {
+        "Material": "M009",
+        "Plan": 100,
+        "Actual": 17,
+        "Actual1": 108800.73,
+        "Actual2": 70200.50,
+        "Target": 1000000.00,
+        "Budget": 412000.00
+    },
+    {
+        "Material": "M0010",
+        "Plan": 100,
+        "Actual": 32,
+        "Actual1": 243200.18,
+        "Actual2": 80000.62,
+        "Target": 1000000.00,
+        "Budget": 426000.00
+    },
+    {
+        "Material": "M0011",
+        "Plan": 100,
+        "Actual": 45,
+        "Actual1": 360800.09,
+        "Actual2": 90200.91,
+        "Target": 1000000.00,
+        "Budget": 440000.00
+    },
+    {
+        "Material": "M0012",
+        "Plan": 100,
+        "Actual": 48,
+        "Actual1": 403200.08,
+        "Actual2": 80000.62,
+        "Target": 1000000.00,
+        "Budget": 454000.00
+    },
+    {
+        "Material": "M0013",
+        "Plan": 100,
+        "Actual": 55,
+        "Actual1": 447200.18,
+        "Actual2": 111800.56,
+        "Target": 1000000.00,
+        "Budget": 484000.00
+    },
+    {
+        "Material": "M0014",
+        "Plan": 100,
+        "Actual": 61,
+        "Actual1": 430200.71,
+        "Actual2": 181800.33,
+        "Target": 1200000.00,
+        "Budget": 516000.00
+    },
+    {
+        "Material": "M0015",
+        "Plan": 100,
+        "Actual": 67,
+        "Actual1": 472500.17,
+        "Actual2": 202500.47,
+        "Target": 1200000.00,
+        "Budget": 548000.00
+    },
+    {
+        "Material": "M0016",
+        "Plan": 100,
+        "Actual": 74,
+        "Actual1": 518200.51,
+        "Actual2": 230800.12,
+        "Target": 1200000.00,
+        "Budget": 580000.00
+    },
+    {
+        "Material": "M0017",
+        "Plan": 100,
+        "Actual": 77,
+        "Actual1": 547300.18,
+        "Actual2": 231700.20,
+        "Target": 1200000.00,
+        "Budget": 612000.00
+    },
+    {
+        "Material": "M0018",
+        "Plan": 100,
+        "Actual": 86,
+        "Actual1": 604801.00,
+        "Actual2": 263200.16,
+        "Target": 1200000.00,
+        "Budget": 644000.00
+    },
+    {
+        "Material": "M0019",
+        "Plan": 100,
+        "Actual": 20,
+        "Actual1": 651700.86,
+        "Actual2": 279300.63,
+        "Target": 1200000.00,
+        "Budget": 676000.00
+    },
+    {
+        "Material": "M0020",
+        "Plan": 100,
+        "Actual": 100,
+        "Actual1": 700000.01,
+        "Actual2": 300000.04,
+        "Target": 1200000.00,
+        "Budget": 708000.00
+    }]
+}

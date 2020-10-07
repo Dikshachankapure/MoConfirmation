@@ -1,0 +1,106 @@
+<mvc:View controllerName="MOConfirmation.controller.View1" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" 
+    xmlns:viz="sap.viz.ui5.controls" xmlns:layout="sap.ui.layout"
+    xmlns:mvc="sap.ui.core.mvc" xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds"
+    xmlns:viz.data="sap.viz.ui5.data" height="100%" displayBlock="true">
+	<layout:FixFlex id='chartFixFlex' minFlexSize="250">
+        <!--Below is the setting panel -->
+        <layout:fixContent>
+            <Panel id='settingsPanel' class="panelStyle" expandable="true" expanded="true" headerText="Settings" width="auto">
+                <content>
+                    <layout:Grid defaultSpan="XL2 L3 M3 S12">
+							<layout:VerticalLayout>
+								<Label text="Plant:"/>
+								<Input width="200px" id="txtPlant" />
+							</layout:VerticalLayout>
+							<layout:VerticalLayout>
+								<Label text="Posting Date (From):"/>
+								<DatePicker
+								id="DP1"
+								placeholder="DD/MM/YYYY"
+								change="handleChange"
+								class="sapUiSmallMarginBottom"
+								valueFormat="dd/mm/yyyy"
+								displayFormat="short"/>
+							</layout:VerticalLayout>
+							<layout:VerticalLayout>
+								<Label text="Posting Date (To)"/>
+								<DatePicker
+								id="DP2"
+								placeholder="DD/MM/YYYY"
+								change="handleChange"
+								class="sapUiSmallMarginBottom"
+								valueFormat="dd/mm/yyyy"
+								displayFormat="short"/>
+								<Text
+								id="T1"
+								text="change event result" visible="false"
+								class="sapUiSmallMarginBottom"
+								/>
+							</layout:VerticalLayout>
+							<layout:VerticalLayout>
+								<Label text="Work Center:"/>
+								<Input width="200px" id="txtWorkCenter" showValueHelp="true" valueHelpRequest="openFragment1"/>
+							</layout:VerticalLayout>
+							
+							
+						
+						</layout:Grid>
+						<layout:Grid defaultSpan="XL2 L3 M3 S12">
+							<layout:VerticalLayout>
+								<Label text="Material:"/>
+								<Input width="200px" id="txtMaterial" />
+							</layout:VerticalLayout>
+							<layout:VerticalLayout>
+										<Label text=""/>
+										<RadioButtonGroup columns="2" width="500px" class="sapUiMediumMarginBottom">
+											<buttons>
+												<RadioButton id="rdb1" text="Quantity"/>
+												<RadioButton id="rdb2" text="Activity"/>
+											</buttons>
+										</RadioButtonGroup>
+							</layout:VerticalLayout>
+								<layout:VerticalLayout>
+									<Label text=""/>
+									<Button type="Accept" width="150px" icon="sap-icon://search"  text="Serach"/>
+							</layout:VerticalLayout>
+							<layout:VerticalLayout>
+							</layout:VerticalLayout>
+						</layout:Grid>
+                </content>
+            </Panel>
+        </layout:fixContent>
+        <layout:flexContent>
+            <viz:Popover id="idPopOver"></viz:Popover>
+            <viz:VizFrame id="idVizFrame" uiConfig="{applicationSet:'fiori'}"
+                height='100%' width="100%" vizType='combination'>
+                <viz:dataset>
+                    <viz.data:FlattenedDataset data="{/milk}">
+                        <viz.data:dimensions>
+                            <viz.data:DimensionDefinition name="Material"
+                                value="{Material}" />
+                        </viz.data:dimensions>
+                        <viz.data:measures>
+                            <viz.data:MeasureDefinition name="Plan"
+                                value="{Plan}" />
+                            <viz.data:MeasureDefinition name="Actual"
+                                value="{Actual}" />
+                            <viz.data:MeasureDefinition name="Actual2"
+                                value="{Actual2}" />
+                            <viz.data:MeasureDefinition name="Actual1"
+                                value="{Actual1}" />
+                        </viz.data:measures>
+                    </viz.data:FlattenedDataset>
+                </viz:dataset>
+
+                <viz:feeds>
+                    <viz.feeds:FeedItem uid="valueAxis" type="Measure"
+                        values="Plan" />
+                    <viz.feeds:FeedItem uid="valueAxis" type="Measure"
+                        values="Actual" />
+                    <viz.feeds:FeedItem id="feedCategoryAxis" uid="categoryAxis" type="Dimension"
+                        values="Material" />
+                </viz:feeds>
+            </viz:VizFrame>
+        </layout:flexContent>
+    </layout:FixFlex>
+</mvc:View>
